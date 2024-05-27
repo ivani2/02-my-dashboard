@@ -2,6 +2,7 @@ import Image from "next/image";
 import {
   IoBrowsersOutline,
   IoCalculator,
+  IoHeartCircleOutline,
   IoLogoReact,
   IoTennisballSharp,
 } from "react-icons/io5";
@@ -25,6 +26,12 @@ const menuItems = [
     icon: <IoTennisballSharp size={40} />,
     title: "Pokemons",
     subtitle: "Generación estática.",
+  },
+  {
+    path: "/dashboard/favorites",
+    icon: <IoHeartCircleOutline size={40} />,
+    title: "Favoritos",
+    subtitle: "Global state.",
   },
 ];
 export const Sidebar = () => {
